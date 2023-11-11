@@ -1,56 +1,187 @@
-/* Navigation */
-.Web {
-    color: #2196F3;
-    font-size: 26px
+/* Heder */
+:root{
+    --mainfoot-color: #757575;
+    --webcolor: #2196F3;
+    --websize: 26px;
+    --studiocolor: #000;
+    --studiocolor2: #FFFFFF;
+    --backcolor: #2F303A;
 }
-
-.StudioB {
-    color: #000;
-    font-size: 26px;
+.logo-web,
+.logo-web-footer {
+    color: var(--webcolor);
+    font-size: var(--websize)
 }
-
-.StudioW {
-    color: #FFFFFF;
-    font-size: 26px;}
-
-.nav {
-    color: #000;
+.logo-studio {
+    color: var(--studiocolor);
+    font-size: var(--websize);
 }
-
-.contact{
-    color: #757575;
+.logo-studiow-footer {
+    color: var(--studiocolor2);
+    font-size: var(--websize);
+}
+/* Nav */
+.menu-link{
+    color: var(--studiocolor);
+    font-weight: 500;
+    font-size: 14px;
+}
+    
+.menu-link:hover,
+.menu-link:focus,
+.contact-link:hover,
+.contact-link:focus{
+    color: var(--webcolor);
+}
+.contact-link{
+    color: var(--mainfoot-color);
 }
 
 a{
     text-decoration: none;
 }
-
 /* MAIN */
-
-h1 {
-    background-color: #2F303A;
-    color: #FFFFFF;
+.hero-section{
+    background-color: var(--backcolor);
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.title {
+    color: var(--studiocolor2);
+    font-weight: 900;
+    line-height: 1.36;
 }
 
 button{
-    background-color: #2196F3;
-    color: #FFFFFF;
+    background-color: var(--webcolor);
+    color: var(--studiocolor2);
+}
+.button-conteiner{ 
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+/* Features */
+.features-title{
+    font-weight: 700;
+    margin-top: 94px;
 }
 
-.ops{
-    color: #757575;
+
+.features-description{
+    color: var(--mainfoot-color);
+    margin-top: 10px;
 }
 
-.teamname{
-    color: #757575;
+.team-item-position{
+    color: var(--mainfoot-color);
+    font-weight: 400;
+    line-height: 1.18;
+    margin-bottom: 0;
+}
+
+.item-img{
+    background-color: #FFFFFF;
+}
+
+.team-list{
+    margin: 0;
 }
 
 /* footer */
-
 footer{
-    background-color: #2F303A;
+    background-color: var(--backcolor);
+    height: 152px;
+}
+.post-address{
+    color: var(--studiocolor2);
 }
 
-.ST{
-    color: #FFFFFF;
+/* Fonts */
+ul,li{ 
+    list-style: none;
+    padding: 0;
+}
+
+/* WebStudio */
+body{
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 1.14;
+    font-weight: 700;
+}
+.container{
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.link-web,
+.link-studio,
+.link-studiow{
+    font-family: "Raleway";
+    line-height: 1.36;
+}
+/* Navigation */
+
+
+.title{
+    font-weight: 900;
+}
+/* Опис якостей */
+.features-description{
+    font-weight: 400;
+    line-height: 1.71;
+}
+/* Команда */
+.section-title{
+    line-height: 1.16;
+}
+.team-item-name{
+    font-weight: 500;
+    line-height: 1.18;
+}
+
+/* Адрес і контакти */
+.post-address{
+    font-weight: 400;
+    line-height: 1.71;
+}
+
+.contact-link{
+    font-weight: 400;
+    line-height: 1.71;
+}
+
+
+/* Retreat */
+.features-item + .features-item{
+    margin-left: 30px;
+}
+
+.job-item + .job-item{
+    margin-left: 30px;
+}
+
+.job-title{
+    margin-top: 118px;
+    margin-bottom: 50px;
+}
+
+.team-section{
+    margin-top: 94px;
+    background-color:#F5F4FA;
+}
+
+.team-item + .team-item{
+    margin-left: 30px;
+}
+
+.team-h2{   
+    margin-bottom: 50px;
 }
