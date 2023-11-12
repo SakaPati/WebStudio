@@ -152,10 +152,14 @@ button{
 
 .team-list{
     display: flex;
+    margin: 0;
+    padding-bottom: 94px;
 }
 
 .team-item{
     margin-right: 30px;
+    background-color: var(--studiocolor2);
+    text-align: center;
 }
 
 .team-item-name{
@@ -169,6 +173,9 @@ button{
     font-weight: 400;
 }
 
+.team-section{
+    background-color: var(--imgcolor);
+}
 /* Footer */
 footer{
     background-color: var(--backcolor);
