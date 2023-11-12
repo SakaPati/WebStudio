@@ -1,17 +1,16 @@
 /* Setting */
-body{
-    font-family: 'Roboto';
-    font-size: 14px;
-    line-height: 1.14;
-    font-weight: 700;
+.contact-menu-footer,.post-address{
+    margin: 0;
+    padding: 0;
+}
+
+
+.hero-section{
+    margin: 94px 0px;
 }
 
 a{
     text-decoration: none;
-}
-
-ul,li{
-    list-style: none;
 }
 
 .container{
@@ -21,7 +20,18 @@ ul,li{
     padding-left: 15px;
     padding-right: 15px;
 }
-/* header */
+
+body{
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 1.14;
+    font-weight: 700;
+}
+
+ul, li{
+    list-style: none;
+}
+/* Header */
 :root{
     --mainfoot-color: #757575;
     --webcolor: #2196F3;
@@ -86,93 +96,60 @@ ul,li{
     margin-left: 144px;
 }
 /* Main */
-/* hero section */
-.hero-section{
-    background-color: var(--backcolor);
-    height: 600px;
+
+/* Filter */
+.main-menu{
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center;
 }
 
-.title {
-    color: var(--studiocolor2);
-    font-weight: 900;
-    line-height: 1.36;
-    font-size: 44px;
-}
-
-button{
-    background-color: var(--webcolor);
-    color: var(--studiocolor2);
-    padding: 10px 32px;
+.main-menu-item{
     border-radius: 4px;
+    padding: 6px 22px;
+    color: var(--studiocolor);
+    background-color: var(--imgcolor);
+    margin: 0px 8px;
 }
-.button-conteiner{ 
+
+.main-menu-item:focus,
+.main-menu-item:hover{
+    color: var(--studiocolor2);
+    background-color: var(--webcolor);
+}
+
+/* Product */
+.product-list{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
+    margin-top: 56px;
+}
+
+.product-item{
     margin-top: 30px;
-}
-/* Features */
-.features-list{
-    display: flex;
     margin-right: 30px;
+    border: 1px solid #EEE;
 }
 
-.features-description{
-    color: var(--mainfoot-color);
-    font-weight: 400;
-    line-height: 1.71;
-}
-/* Jobs */
-.job-list{
-    padding: 0;
-    display: flex;
-    justify-content: center;
+.product-img{
+    width: 334px;
 }
 
-.job-item{
-    margin-right: 30px;
+.product-name{
+    font-size: 18px;
+    line-height: 2.00;
 }
 
-.job-img{
-    width: 350px;
-}
-
-.job-title{
-    text-align: center;
-    font-size: 36px;
-}
-/* Teams */
-.team-h2{
-    text-align: center;
-    font-size: 36px;
-}
-
-.team-list{
-    display: flex;
-}
-
-.team-item{
-    margin-right: 30px;
-}
-
-.team-item-name{
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.team-item-position{
+.product-filter{
     color: var(--mainfoot-color);
     font-size: 16px;
     font-weight: 400;
+    line-height: 1.87;
 }
-
 /* Footer */
 footer{
     background-color: var(--backcolor);
-    padding-bottom: 5px;
 }
 /* Logo */
 .logo-web-footer{
