@@ -1,4 +1,12 @@
 /* Setting */
+p{
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
 .contact-menu-footer,.post-address{
     margin: 0;
     padding: 0;
@@ -26,13 +34,16 @@ body{
     font-size: 14px;
     line-height: 1.14;
     font-weight: 700;
+    margin: 0;
 }
 
 ul, li{
     list-style: none;
+    margin: 0;
 }
-/* Header */
+/* header */
 :root{
+    --product-color:#212121;
     --mainfoot-color: #757575;
     --webcolor: #2196F3;
     --websize: 26px;
@@ -57,15 +68,19 @@ ul, li{
 /* Navigation */
 
 .logo-header{
-    margin-bottom: 25px;
-    margin-top: 32px;
-    margin-right: 63px;
+    padding-bottom: 25px;
+    padding-top: 24px;
+}
+
+.menu{
+    margin-left: 93px;
 }
 
 .menu-link{
     color: var(--studiocolor);
     font-weight: 500;
-    margin-right: 50px;
+    padding-right: 50px;
+    padding-bottom: 25px;
 }
 
 .menu-link:hover,
@@ -81,19 +96,16 @@ ul, li{
 
 .navigation,.menu,.contact-menu-header,.con-header{
     display: flex;
+    align-items: center;
 }
 
 .contact-link-header{
     font-weight: 500;
-    margin-right: 50px;
+    padding-left: 50px;
 }
 
-.contact-item,
-.menu-item{
-    margin: 32px 0px;
-}
 .contact-menu-header{
-    margin-left: 144px;
+    margin-left: auto;
 }
 /* Main */
 
@@ -122,7 +134,6 @@ ul, li{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    text-align: center;
     margin-top: 56px;
 }
 
@@ -137,6 +148,8 @@ ul, li{
 }
 
 .product-name{
+    color: var(--product-color);
+    margin-left: 24px;
     font-size: 18px;
     line-height: 2.00;
 }
@@ -146,6 +159,7 @@ ul, li{
     font-size: 16px;
     font-weight: 400;
     line-height: 1.87;
+    margin-left: 24px;
 }
 /* Footer */
 footer{

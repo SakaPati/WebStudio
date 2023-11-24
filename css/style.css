@@ -4,6 +4,7 @@ body{
     font-size: 14px;
     line-height: 1.14;
     font-weight: 700;
+    margin: 0;
 }
 
 a{
@@ -11,6 +12,8 @@ a{
 }
 
 ul,li{
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 
@@ -20,6 +23,14 @@ ul,li{
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+p{
+    margin: 0;
 }
 /* header */
 :root{
@@ -47,15 +58,19 @@ ul,li{
 /* Navigation */
 
 .logo-header{
-    margin-bottom: 25px;
-    margin-top: 32px;
-    margin-right: 63px;
+    padding-bottom: 25px;
+    padding-top: 24px;
+}
+
+.menu{
+    margin-left: 93px;
 }
 
 .menu-link{
     color: var(--studiocolor);
     font-weight: 500;
-    margin-right: 50px;
+    padding-right: 50px;
+    padding-bottom: 25px;
 }
 
 .menu-link:hover,
@@ -71,19 +86,16 @@ ul,li{
 
 .navigation,.menu,.contact-menu-header,.con-header{
     display: flex;
+    align-items: center;
 }
 
 .contact-link-header{
     font-weight: 500;
-    margin-right: 50px;
+    padding-left: 50px;
 }
 
-.contact-item,
-.menu-item{
-    margin: 32px 0px;
-}
 .contact-menu-header{
-    margin-left: 144px;
+    margin-left: auto;
 }
 /* Main */
 /* hero section */
@@ -103,21 +115,29 @@ ul,li{
     font-size: 44px;
 }
 
+.title-item{
+    display: flex;
+    flex-direction: column;
+}
+
 button{
     background-color: var(--webcolor);
     color: var(--studiocolor2);
     padding: 10px 32px;
     border-radius: 4px;
+    border: none;
 }
 .button-conteiner{ 
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    padding-top: 30px;
 }
 /* Features */
 .features-list{
+    padding-top: 94px;
+    padding-bottom: 94px;
     display: flex;
-    margin-right: 30px;
+    
 }
 
 .features-description{
@@ -125,15 +145,22 @@ button{
     font-weight: 400;
     line-height: 1.71;
 }
+
+.features-item{
+    padding-right: 30px;
+}
+
 /* Jobs */
 .job-list{
     padding: 0;
     display: flex;
     justify-content: center;
+    padding-bottom: 94px;
 }
 
 .job-item{
-    margin-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .job-img{
@@ -143,11 +170,14 @@ button{
 .job-title{
     text-align: center;
     font-size: 36px;
+    padding-bottom: 50px;
 }
 /* Teams */
 .team-h2{
     text-align: center;
     font-size: 36px;
+    padding-top: 94px;
+    padding-bottom: 50px;
 }
 
 .team-list{
@@ -157,20 +187,28 @@ button{
 }
 
 .team-item{
-    margin-right: 30px;
+    margin-right: auto;
+    margin-left: auto;
     background-color: var(--studiocolor2);
     text-align: center;
+}
+
+.item-img{
+    width: 250px;
+    height: 240px;
 }
 
 .team-item-name{
     font-size: 16px;
     font-weight: 500;
+    padding: 10px 0px;
 }
 
 .team-item-position{
     color: var(--mainfoot-color);
     font-size: 16px;
     font-weight: 400;
+    padding-bottom: 30px;
 }
 
 .team-section{
@@ -179,8 +217,8 @@ button{
 /* Footer */
 footer{
     background-color: var(--backcolor);
-    padding-bottom: 5px;
 }
+
 /* Logo */
 .logo-web-footer{
     color: var(--webcolor);
