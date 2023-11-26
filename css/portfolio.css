@@ -40,6 +40,7 @@ body{
 ul, li{
     list-style: none;
     margin: 0;
+    padding: 0;
 }
 /* header */
 :root{
@@ -109,6 +110,10 @@ ul, li{
 }
 /* Main */
 
+.hero-section{
+    margin: 94px 0px;
+}
+
 /* Filter */
 .main-menu{
     display: flex;
@@ -130,6 +135,7 @@ ul, li{
 }
 
 /* Product */
+
 .product-list{
     display: flex;
     flex-wrap: wrap;
@@ -164,7 +170,10 @@ ul, li{
 /* Footer */
 footer{
     background-color: var(--backcolor);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
+
 /* Logo */
 .logo-web-footer{
     color: var(--webcolor);
@@ -185,6 +194,8 @@ footer{
     font-weight: 400;
     margin-bottom: 9px;
     line-height: 1.71;
+    font-style: normal;
+    margin-top: 20px;
 }
 
 .contact-link-footer{
@@ -192,4 +203,6 @@ footer{
     font-weight: 400;
     line-height: 1.71;
     margin-bottom: 9px;
+    font-style: normal;
+    margin-top: 9px;
 }

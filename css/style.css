@@ -115,9 +115,8 @@ p{
     font-size: 44px;
 }
 
-.title-item{
-    display: flex;
-    flex-direction: column;
+.hero-title{
+    width: 696px;
 }
 
 button{
@@ -127,17 +126,16 @@ button{
     border-radius: 4px;
     border: none;
 }
-.button-conteiner{ 
-    display: flex;
-    justify-content: center;
-    padding-top: 30px;
-}
+
 /* Features */
-.features-list{
+.features{
     padding-top: 94px;
     padding-bottom: 94px;
+}
+
+.features-list{
+    column-gap: 30px;
     display: flex;
-    
 }
 
 .features-description{
@@ -146,25 +144,18 @@ button{
     line-height: 1.71;
 }
 
-.features-item{
-    padding-right: 30px;
-}
-
 /* Jobs */
-.job-list{
-    padding: 0;
-    display: flex;
-    justify-content: center;
+.job{
     padding-bottom: 94px;
 }
 
-.job-item{
-    margin-left: auto;
-    margin-right: auto;
+.job-list{
+    display: flex;
+    justify-content: space-between;
 }
 
 .job-img{
-    width: 350px;
+    width: 370px;
 }
 
 .job-title{
@@ -173,17 +164,20 @@ button{
     padding-bottom: 50px;
 }
 /* Teams */
+.team-section{
+    background-color: var(--imgcolor);
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .team-h2{
     text-align: center;
     font-size: 36px;
-    padding-top: 94px;
     padding-bottom: 50px;
 }
 
 .team-list{
     display: flex;
-    margin: 0;
-    padding-bottom: 94px;
+    justify-content: space-between;
 }
 
 .team-item{
@@ -194,8 +188,8 @@ button{
 }
 
 .item-img{
-    width: 250px;
-    height: 240px;
+    width: 270px;
+    height: 260px;
 }
 
 .team-item-name{
@@ -210,13 +204,11 @@ button{
     font-weight: 400;
     padding-bottom: 30px;
 }
-
-.team-section{
-    background-color: var(--imgcolor);
-}
 /* Footer */
 footer{
     background-color: var(--backcolor);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 /* Logo */
@@ -239,6 +231,8 @@ footer{
     font-weight: 400;
     margin-bottom: 9px;
     line-height: 1.71;
+    font-style: normal;
+    margin-top: 20px;
 }
 
 .contact-link-footer{
@@ -246,4 +240,6 @@ footer{
     font-weight: 400;
     line-height: 1.71;
     margin-bottom: 9px;
+    font-style: normal;
+    margin-top: 9px;
 }
