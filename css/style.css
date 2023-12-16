@@ -105,7 +105,7 @@ p{
 /* Main */
 /* hero section */
 .hero-section{
-    background-color: var(--backcolor);
+    background-image: url(../images/project-company.jpg);
     height: 600px;
     display: flex;
     justify-content: center;
@@ -151,6 +151,39 @@ button{
     margin-top: 10px;
 }
 
+.uvaga-to-details::before{
+    width: 270px;
+    height: 120px;
+    display: block;
+    content: "";
+    background-image: url(../images/satellite-dish.png);
+    margin-bottom: 30px;
+}
+
+.punctuality::before{
+    width: 270px;
+    height: 120px;
+    display: block;
+    content: "";
+    background-image: url(../images/watch.png);
+    margin-bottom: 30px;
+}
+.plan::before{
+    width: 270px;
+    height: 120px;
+    display: block;
+    content: "";
+    background-image: url(../images/laptop-diagram.png);
+    margin-bottom: 30px;
+}
+.suchasni-technologies::before{
+    width: 270px;
+    height: 120px;
+    display: block;
+    content: "";
+    background-image: url(../images/astronaut.png);
+    margin-bottom: 30px;
+}
 /* Jobs */
 .job{
     padding-bottom: 94px;
@@ -192,6 +225,9 @@ button{
     margin-left: auto;
     background-color: var(--studiocolor2);
     text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 .item-img{
