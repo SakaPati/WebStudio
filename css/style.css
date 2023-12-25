@@ -105,12 +105,18 @@ p{
 /* Main */
 /* hero section */
 .hero-section{
-    background-image: url(../images/project-company.jpg);
+    max-width: 1600px;
     height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.40),
+      rgba(47, 48, 58, 0.40)
+    ),
+    url("../images/project-company.jpg");
 }
 
 .title {
