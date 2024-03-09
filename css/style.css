@@ -52,6 +52,7 @@ p {
   --studiocolor2: #ffffff;
   --backcolor: #2f303a;
   --imgcolor: #f5f4fa;
+  --iconcolor: #afb1b8;
 }
 .logo-web {
   color: var(--webcolor);
@@ -85,16 +86,21 @@ p {
 }
 
 .menu-link:hover,
-.menu-link:focus,
+.menu-link:focus {
+  color: var(--webcolor);
+}
+
 .contact-link-header:hover,
 .contact-link-header:focus {
   color: var(--webcolor);
 }
 
-.tel:hover,
-.tel:focus,
-.mail:hover,
-.mail:focus {
+.contact-link-header:hover .icon-contact {
+  fill: var(--webcolor);
+}
+
+.icon-contact:hover,
+.icon-contact:focus {
   fill: #2196f3;
 }
 
@@ -183,39 +189,15 @@ button {
   margin-top: 10px;
 }
 
-.uvaga-to-details::before {
-  width: 100%;
-  height: 120px;
-  display: block;
-  content: "";
-  background-image: url(../images/satellite-dish.png);
+.features-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--imgcolor);
+  padding: 22px 0;
   margin-bottom: 30px;
 }
 
-.punctuality::before {
-  width: 100%;
-  height: 120px;
-  display: block;
-  content: "";
-  background-image: url(../images/watch.png);
-  margin-bottom: 30px;
-}
-.plan::before {
-  width: 100%;
-  height: 120px;
-  display: block;
-  content: "";
-  background-image: url(../images/laptop-diagram.png);
-  margin-bottom: 30px;
-}
-.suchasni-technologies::before {
-  width: 100%;
-  height: 120px;
-  display: block;
-  content: "";
-  background-image: url(../images/astronaut.png);
-  margin-bottom: 30px;
-}
 /* Jobs */
 .job {
   padding-bottom: 94px;
@@ -261,6 +243,7 @@ button {
   border-bottom-right-radius: 5px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  padding-bottom: 34px;
 }
 
 .item-img {
@@ -278,7 +261,81 @@ button {
   color: var(--mainfoot-color);
   font-size: 16px;
   font-weight: 400;
-  padding-bottom: 54px;
+  padding-bottom: 21px;
+}
+
+.icon-list {
+  display: flex;
+  justify-content: center;
+}
+
+.link-social {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-icon-list {
+  display: flex;
+}
+
+.icon-social {
+  fill: var(--iconcolor);
+}
+
+.link-social:hover {
+  background-color: var(--webcolor);
+}
+
+.link-social:hover .icon-social {
+  fill: var(--studiocolor2);
+}
+
+/* Постийни клиенты */
+.clients {
+  padding-top: 87px;
+  padding-bottom: 101px;
+}
+
+.clients-zagolovog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+
+.item-clients:nth-child(n + 2) {
+  margin-left: 30px;
+}
+
+.item-clients {
+  width: 170px;
+  height: 97px;
+  border: 1px solid var(--iconcolor);
+  border-radius: 4px;
+}
+
+.link-clients {
+  fill: var(--iconcolor);
+}
+
+.link-clients:hover {
+  fill: var(--webcolor);
+}
+
+.item-clients:hover {
+  border: 1px solid var(--webcolor);
 }
 
 /* Footer */
@@ -302,6 +359,8 @@ footer {
   line-height: 1.38;
   font-family: "Raleway";
 }
+
+
 /* Address */
 .post-address {
   color: var(--studiocolor2);
