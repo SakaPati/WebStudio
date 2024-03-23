@@ -53,6 +53,7 @@ p {
   --backcolor: #2f303a;
   --imgcolor: #f5f4fa;
   --iconcolor: #afb1b8;
+  --footericoncolor: #44454e;
 }
 .logo-web {
   color: var(--webcolor);
@@ -360,7 +361,6 @@ footer {
   font-family: "Raleway";
 }
 
-
 /* Address */
 .post-address {
   color: var(--studiocolor2);
@@ -378,4 +378,49 @@ footer {
   margin-bottom: 9px;
   font-style: normal;
   margin-top: 9px;
+}
+
+.as {
+  display: flex;
+}
+
+.ss {
+  padding-bottom: 20px;
+  color: var(--studiocolor2);
+  text-transform: uppercase;
+}
+
+.icon-list-footer {
+  display: flex;
+}
+
+.footer-conteiner:nth-child(n + 2) {
+  margin-left: 71px;
+  margin-top: 11px;
+}
+
+.link-icon-list:nth-child(n + 2) {
+  padding-left: 10px;
+}
+
+.link-social-footer {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--footericoncolor);
+}
+.icon-social-footer {
+  fill: var(--studiocolor2);
+}
+
+.link-social-footer:hover {
+  background-color: var(--webcolor);
+}
+
+.link-social-footer:hover .icon-social {
+  fill: var(--studiocolor2);
 }
