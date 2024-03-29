@@ -78,18 +78,21 @@ p {
 
 .menu {
   margin-left: 93px;
+  column-gap: 50px;
 }
 
 .menu-link {
   color: var(--studiocolor);
   font-weight: 500;
-  padding-right: 50px;
-  padding-bottom: 25px;
 }
 
 .menu-link:hover,
 .menu-link:focus {
   color: var(--webcolor);
+  background-image: url(../images/hover.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding-bottom: 34px;
 }
 
 .contact-link-header:hover,
@@ -494,9 +497,9 @@ footer {
   pointer-events: none;
 }
 
-.no-scroll {
+/* .no-scroll {
   overflow: hidden;
-}
+} */
 
 .modal {
   position: absolute;
