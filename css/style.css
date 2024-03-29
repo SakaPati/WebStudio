@@ -549,7 +549,9 @@ footer {
   font-weight: 400;
 }
 
-.order-input:nth-child(-n + 2) {
+input[type="name"],
+input[type="tel"],
+input[type="email"] {
   margin-bottom: 10px;
 }
 
@@ -564,6 +566,7 @@ footer {
   height: 40px;
   outline: 1px solid var(--close);
   border-radius: 4px;
+  padding-left: 40px;
 }
 
 .order-link {
@@ -572,6 +575,58 @@ footer {
 
 .icon-modal {
   position: absolute;
-  top: 55%;
+  top: 32px;
   left: 2%;
+}
+
+.order-link:hover .icon-modal {
+  fill: var(--webcolor);
+}
+
+.icon-modal:hover,
+.icon-modal:focus {
+  fill: var(--webcolor);
+}
+
+input[type="text"] {
+  padding-left: 15px;
+  padding-bottom: 80px;
+  width: 448px;
+  height: 120px;
+}
+
+.agreement {
+  display: flex;
+  margin-top: 25px;
+}
+
+.checkbox {
+  margin-left: 13px;
+  width: 16px;
+  height: 15px;
+}
+
+.rights {
+  padding-left: 7px;
+  color: var(--mainfoot-color);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.dogovor {
+  text-decoration: underline;
+  color: var(--webcolor);
+}
+
+.send {
+  border: none;
+  width: 200px;
+  height: 50px;
+  background-color: var(--webcolor);
+  color: var(--studiocolor2);
+  font-weight: 700;
+  font-size: 16px;
+  margin-left: 120px;
+  margin-top: 30px;
+  border-radius: 4px;
 }
