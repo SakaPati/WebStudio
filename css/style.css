@@ -84,6 +84,7 @@ p {
 .menu-link {
   color: var(--studiocolor);
   font-weight: 500;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-link:hover,
@@ -104,13 +105,22 @@ p {
   fill: var(--webcolor);
 }
 
+.icon-contact {
+  margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .icon-contact:hover,
 .icon-contact:focus {
   fill: var(--webcolor);
 }
 
 .contact-link-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--mainfoot-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-item + .contact-item {
@@ -309,10 +319,12 @@ p {
 
 .icon-social {
   fill: var(--iconcolor);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-social:hover {
   background-color: var(--webcolor);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-social:hover .icon-social {
@@ -348,10 +360,12 @@ p {
   height: 97px;
   border: 1px solid var(--iconcolor);
   border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-clients {
   fill: var(--iconcolor);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-clients:hover {
@@ -435,6 +449,7 @@ footer {
   align-items: center;
   justify-content: center;
   background-color: var(--footericoncolor);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-social-footer {
   fill: var(--studiocolor2);
@@ -497,9 +512,9 @@ footer {
   pointer-events: none;
 }
 
-/* .no-scroll {
+.no-scroll {
   overflow: hidden;
-} */
+}
 
 .modal {
   position: absolute;
